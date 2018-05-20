@@ -3,10 +3,15 @@
 This project is a simple boilerplate for small projects, using SCSS, and "future" versions of Javascript.
 It also contains a few simple SCSS mixins and utility calsses. 
 
+## Getting started
+To gettigns started simply run `npm i`.
+Then use `gulp` to start the dev server, and start brower-sync.
+You default browser shoul open the site, if not navitage to `localhost:3000`.
+
+
 ## Utility
   
-Folowing is the current and future utility classes and/or mixins
-
+Folowing is the current and future utility classes and/or mixins.
 
 
 ### Spacing
