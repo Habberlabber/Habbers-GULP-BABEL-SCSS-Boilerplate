@@ -5,7 +5,9 @@ It also contains a few simple SCSS mixins and utility calsses.
 
 ## Utility
   
-Folowing is the current utility classes and/or mixins
+Folowing is the current and future utility classes and/or mixins
+
+
 
 ### Spacing
 
@@ -51,3 +53,26 @@ $spacing-important: false;
 ```
 
 You can override the defailt variables to change spacing, and/or create more or less size options.
+
+### Box-Shadow
+_Comming soon_
+
+### Flex
+_Comming soon_
+
+### Text
+_Comming soon_
+
+### Position
+_Comming soon_
+
+### Border
+_Comming soon_
+
+### Media
+_Comming soon_
+
+### Color
+_Comming soon_
+
+
