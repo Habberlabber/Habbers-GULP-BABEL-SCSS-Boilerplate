@@ -34,7 +34,7 @@ Taking inspiration form Bootstraps spacing utility classes this is mixins and st
 **Default spacing:**
 
 The default spacing is a s follows:
-```
+```SCSS
 // The spacing sizes is defined as follows
 $spacing-sizes: (
   0: 0rem,
