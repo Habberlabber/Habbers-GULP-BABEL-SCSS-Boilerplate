@@ -1,0 +1,32 @@
+{
+  "name": "GulpBabelSCSSBoilerplate",
+  "version": "1.0.0",
+  "description": "Simple GULP, BABL & SCSS Boilerplate for future projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Habberlabber/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Habberlabber/portfolio/issues"
+  },
+  "homepage": "https://github.com/Habberlabber/portfolio#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0",
+    "normalize.css": "^8.0.0",
+    "sass-spacing": "^2.0.0",
+    "webpack-stream": "^4.0.3"
+  }
+}

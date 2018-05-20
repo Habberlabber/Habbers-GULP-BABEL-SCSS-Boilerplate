@@ -1,0 +1,21 @@
+/*
+|--------------------------------------------------------------------------
+| MAIN.SCSS
+|--------------------------------------------------------------------------
+|
+| This file imports all the scss used for the application
+|
+*/
+
+// Variables
+@import "variables/variables.scss";
+
+// Mixins
+@import "mixins/mixins.scss";
+
+// Utility classes
+@import "utilities/utilities.scss";
+
+
+// Blocks
+@import "blocks/blocks.scss";
