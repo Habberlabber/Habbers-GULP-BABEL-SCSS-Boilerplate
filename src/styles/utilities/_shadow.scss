@@ -1,0 +1,24 @@
+/*
+|--------------------------------------------------------------------------
+| UTILITIES - SHADOW.SCSS
+|--------------------------------------------------------------------------
+|
+| Shadow utility classes, material design inspired
+| Based on: https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d
+|
+*/
+
+@each $unit, $shadow in $shadow-sizes {
+
+  .shadow\:#{$unit} {
+    @include shadow($unit);
+  }
+
+  .shadow-hover\:#{$unit} {
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+      @include shadow($unit);
+    }
+  }
+
+}
