@@ -22,4 +22,6 @@
 
 body {
   @include flex();
+  @include flex-center();
+  @include bg(teal);
 }

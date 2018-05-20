@@ -1,0 +1,44 @@
+/*
+|--------------------------------------------------------------------------
+| MIXINS - COLOR.SCSS
+|--------------------------------------------------------------------------
+|
+| Color utility mixins
+|
+*/
+
+// Color map
+$colors: (
+  white:    #fff,
+  black:    #22292F,
+  grey:     #B8C2CC,
+  red:      #E3342F,
+  orange:   #F6993F,
+  yellow:   #FFED4A,
+  green:    #38C172,
+  teal:     #4DC0B5,
+  blue:     #3490DC,
+  indigo:   #6574CD,
+  purple:   #9561E2,
+  pink:     #F66D9B
+);
+
+@mixin color($c, $d:null, $l:null, $a:1){
+  @if ($d) {
+    color: darken( rgba( map-get($colors, $c), $a), $d);
+  } @else if ($l) {
+    color: lighten( rgba( map-get($colors, $c), $a), $l);
+  } @else {
+    color: rgba( map-get($colors, $c), $a);
+  }
+}
+
+@mixin bg($c, $d:null, $l:null, $a:1){
+  @if ($d) {
+    background-color: darken( rgba( map-get($colors, $c), $a), $d);
+  } @else if ($l) {
+    background-color: lighten( rgba( map-get($colors, $c), $a), $l);
+  } @else {
+    background-color: rgba( map-get($colors, $c), $a);
+  }
+}

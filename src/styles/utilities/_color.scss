@@ -1,0 +1,58 @@
+/*
+|--------------------------------------------------------------------------
+| UTILITIES - COLOR.SCSS
+|--------------------------------------------------------------------------
+|
+| Color utility classes
+|
+*/
+
+// Lighten map
+$lighten: (
+  lightest: 40%,
+  lighter:  25%,
+  light:    10%
+);
+
+// Darken map
+$darken: (
+  darkest:  40%,
+  darker:   25%,
+  dark:     10%
+);
+
+@each $color_unit, $color in $colors {
+
+  .color-#{$color_unit} {
+    @include color($color_unit);
+  }
+
+  @each $unit, $level in $lighten {
+    .color-#{$color_unit}\:#{$unit} {
+      @include color($color_unit, null, $level);
+    }
+  }
+
+  @each $unit, $level in $darken {
+    .color-#{$color_unit}\:#{$unit} {
+      @include color($color_unit, $level);
+    }
+  }
+
+  .bg-#{$color_unit} {
+    @include bg($color_unit);
+  }
+
+  @each $unit, $level in $lighten {
+    .bg-#{$color_unit}\:#{$unit} {
+      @include bg($color_unit, null, $level);
+    }
+  }
+
+  @each $unit, $level in $darken {
+    .bg-#{$color_unit}\:#{$unit} {
+      @include bg($color_unit, $level);
+    }
+  }
+
+}
