@@ -13,7 +13,7 @@ Taking inspiration form Bootstraps spacing utility classes this is mixins and st
 
 **Example usage of classes:**
 
- ```
+ ```HTML
  <div class="mx:auto py:2">Content</div>
  ```
 
@@ -24,7 +24,7 @@ Taking inspiration form Bootstraps spacing utility classes this is mixins and st
 
 **Example usage of Mixins:**
 
-```
+```SCSS
 .content {
   @include mx(auto);
   @include py(2);
