@@ -31,7 +31,7 @@ Taking inspiration form Bootstraps spacing utility classes this is mixins and st
 }
 ```
 
-**Default spacing: **
+**Default spacing:**
 
 The default spacing is a s follows:
 ```
@@ -50,4 +50,4 @@ $spacing-sizes: (
 $spacing-important: false;
 ```
 
-You can override the defailt variables to change spacing, and/or create more or less sizes.
+You can override the defailt variables to change spacing, and/or create more or less size options.
