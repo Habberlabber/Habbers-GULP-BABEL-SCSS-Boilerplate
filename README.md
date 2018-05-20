@@ -56,7 +56,7 @@ You can override the default variables to change spacing, and/or create more or 
 
 ### Box-Shadow
 The Shadow utility classes and mixins are inspired by the material design shadow levels.
-The code is inspired by [Florian Kutschera medium post](https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d).
+The code is inspired by [Florian Kutscheras Google Material Design Shadow Helper](https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d).
 
 **Example usage of classes:**
 
