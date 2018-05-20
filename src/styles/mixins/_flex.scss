@@ -1,0 +1,57 @@
+/*
+|--------------------------------------------------------------------------
+| MIXINS - FLEX.SCSS
+|--------------------------------------------------------------------------
+|
+| Flex box utility mixins
+|
+*/
+
+// Directions map
+$flex-directions: (
+  r:  row,
+  rr: row-reverse,
+  c:  column,
+  cr: column-reverse
+);
+
+// Directions map
+$flex-align: (
+  fs: flex-start,
+  fe: flex-end,
+  c:  center,
+  s:  stretch,
+  b:  baseline
+);
+
+// Directions map
+$flex-justify: (
+  fs: flex-start,
+  fe: flex-end,
+  sb: space-between,
+  sa: space-around,
+  se: space-evenly,
+  c:  center
+);
+
+@mixin flex($d: null){
+  display: flex;
+  @if ($d) {
+    flex-direction: map-get($flex-directions, $d);
+  }
+}
+
+@mixin flex-align($a){
+  align-items: map-get($flex-align, $a);
+}
+
+@mixin flex-justify($j){
+  justify-content: map-get($flex-justify, $j);
+}
+
+@mixin flex-center() {
+  @include flex-align(c);
+  @include flex-justify(c);
+}
+
+

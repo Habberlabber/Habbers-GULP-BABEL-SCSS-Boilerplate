@@ -16,6 +16,10 @@
 // Utility classes
 @import "utilities/utilities.scss";
 
-
 // Blocks
 @import "blocks/blocks.scss";
+
+
+body {
+  @include flex();
+}

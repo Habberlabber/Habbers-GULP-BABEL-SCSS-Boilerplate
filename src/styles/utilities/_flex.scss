@@ -1,0 +1,34 @@
+/*
+|--------------------------------------------------------------------------
+| UTILITIES - FLEX.SCSS
+|--------------------------------------------------------------------------
+|
+| Flex box utility classes
+|
+*/
+
+.flex {
+  @include flex();
+}
+
+@each $unit, $d in $flex-directions {
+  .flex\:#{$unit} {
+    @include flex($unit);
+  }
+}
+
+@each $unit, $a in $flex-align {
+  .flex-align\:#{$unit} {
+    @include flex-align($unit);
+  }
+}
+
+@each $unit, $j in $flex-justify {
+  .flex-justify\:#{$unit} {
+    @include flex-justify($unit);
+  }
+}
+
+.flex-center {
+  @include flex-center();
+}

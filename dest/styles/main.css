@@ -44,6 +44,14 @@
 */
 /*
 |--------------------------------------------------------------------------
+| MIXINS - FLEX.SCSS
+|--------------------------------------------------------------------------
+|
+| Flex box utility mixins
+|
+*/
+/*
+|--------------------------------------------------------------------------
 | UTILITIES.SCSS
 |--------------------------------------------------------------------------
 |
@@ -485,6 +493,70 @@
 
 /*
 |--------------------------------------------------------------------------
+| UTILITIES - FLEX.SCSS
+|--------------------------------------------------------------------------
+|
+| Flex box utility classes
+|
+*/
+.flex {
+  display: flex; }
+
+.flex\:r {
+  display: flex;
+  flex-direction: row; }
+
+.flex\:rr {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.flex\:c {
+  display: flex;
+  flex-direction: column; }
+
+.flex\:cr {
+  display: flex;
+  flex-direction: column-reverse; }
+
+.flex-align\:fs {
+  align-items: flex-start; }
+
+.flex-align\:fe {
+  align-items: flex-end; }
+
+.flex-align\:c {
+  align-items: center; }
+
+.flex-align\:s {
+  align-items: stretch; }
+
+.flex-align\:b {
+  align-items: baseline; }
+
+.flex-justify\:fs {
+  justify-content: flex-start; }
+
+.flex-justify\:fe {
+  justify-content: flex-end; }
+
+.flex-justify\:sb {
+  justify-content: space-between; }
+
+.flex-justify\:sa {
+  justify-content: space-around; }
+
+.flex-justify\:se {
+  justify-content: space-evenly; }
+
+.flex-justify\:c {
+  justify-content: center; }
+
+.flex-center {
+  align-items: center;
+  justify-content: center; }
+
+/*
+|--------------------------------------------------------------------------
 | BLOCKS.SCSS
 |--------------------------------------------------------------------------
 |
@@ -492,3 +564,5 @@
 | All partials in this folder should be included in this file!
 |
 */
+body {
+  display: flex; }
