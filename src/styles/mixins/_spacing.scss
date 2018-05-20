@@ -8,6 +8,7 @@
 |
 */
 
+// The spacing sizes is defined as follows
 $spacing-sizes: (
   0: 0rem,
   1: 0.25rem,
@@ -18,6 +19,7 @@ $spacing-sizes: (
   6: 8rem,
 ) !default;
 
+// Choose if !important is used
 $spacing-important: true !default;
 
 @mixin m($t : 1, $r: null, $b: null, $l: null) {
