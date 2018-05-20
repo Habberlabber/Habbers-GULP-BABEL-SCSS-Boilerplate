@@ -99,7 +99,7 @@ $shadow-sizes: (
 You can override the default variables to change shadows, and/or create more or less options.
 
 ### Flex
-_Comming soon_
+Feature integrated description comming soon!
 
 ### Text
 _Comming soon_
@@ -114,6 +114,6 @@ _Comming soon_
 _Comming soon_
 
 ### Color
-_Comming soon_
+Feature integrated description comming soon!
 
 
