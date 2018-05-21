@@ -1,0 +1,104 @@
+/*
+|--------------------------------------------------------------------------
+| MIXINS - TEXT.SCSS
+|--------------------------------------------------------------------------
+|
+| Text utility mixins
+|
+*/
+
+// Align map
+$align: (
+  l:  left,
+  r:  right,
+  c:  center,
+  j:  justify
+);
+
+// Text Align Mixin
+@mixin align($a){
+  text-align: map-get($align, $a);
+}
+
+// Font size map
+$font-size: (
+  xs:   .75rem,
+  sm:   .875rem,
+  m:    1rem,
+  lg:   1.125rem,
+  xl:   1.25rem,
+  2xl:  1.5rem,
+  3xl:  1.875rem,
+  4xl:  2.25rem,
+  5xl:  3rem
+);
+
+// Text size Mixin
+@mixin text($s){
+  text-align: map-get($font-size, $s);
+}
+
+// Font weight map
+$weight: (
+  hairline:   .75rem,
+  thin:       .875rem,
+  light:      1rem,
+  normal:     1.125rem,
+  medium:     1.25rem,
+  semibold:   1.5rem,
+  bold:       1.875rem,
+  extrabold:  2.25rem,
+  black:      3rem
+);
+
+// Font weight Mixin
+@mixin weight($w){
+  text-align: map-get($weight, $w);
+}
+
+// Font style maps
+$style: (
+  italic: italic
+);
+
+$transform: (
+  upper:  uppercase,
+  lower:  lowercase
+);
+
+$decoration: (
+  underline:    underline,
+  line-through: line-through,
+  no-underline: none
+);
+
+// Font weight Mixin
+@mixin style($s){
+
+  @if ( map-get($style, $s) ) {
+
+    font-style: map-get($style, $s);
+
+  } @else if ( map-get($transform, $s) ) {
+
+    text-transform: map-get($transform, $s);
+
+  } @else if ( map-get($decoration, $s) ) {
+
+    text-decoration: map-get($decoration, $s);
+
+  }
+}
+
+@mixin truncate(){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+
+
+
+
+
+

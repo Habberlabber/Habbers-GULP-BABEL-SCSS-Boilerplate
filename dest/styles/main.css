@@ -60,6 +60,14 @@
 */
 /*
 |--------------------------------------------------------------------------
+| MIXINS - TEXT.SCSS
+|--------------------------------------------------------------------------
+|
+| Text utility mixins
+|
+*/
+/*
+|--------------------------------------------------------------------------
 | UTILITIES.SCSS
 |--------------------------------------------------------------------------
 |
@@ -1074,6 +1082,103 @@
 
 .bg-pink\:dark {
   background-color: #f33d7a; }
+
+/*
+|--------------------------------------------------------------------------
+| CLASSES - TEXT.SCSS
+|--------------------------------------------------------------------------
+|
+| Text utility classes
+|
+*/
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.align\:l {
+  text-align: left; }
+
+.align\:r {
+  text-align: right; }
+
+.align\:c {
+  text-align: center; }
+
+.align\:j {
+  text-align: justify; }
+
+.weight\:hairline {
+  text-align: 0.75rem; }
+
+.weight\:thin {
+  text-align: 0.875rem; }
+
+.weight\:light {
+  text-align: 1rem; }
+
+.weight\:normal {
+  text-align: 1.125rem; }
+
+.weight\:medium {
+  text-align: 1.25rem; }
+
+.weight\:semibold {
+  text-align: 1.5rem; }
+
+.weight\:bold {
+  text-align: 1.875rem; }
+
+.weight\:extrabold {
+  text-align: 2.25rem; }
+
+.weight\:black {
+  text-align: 3rem; }
+
+.text-size\:xs {
+  text-align: 0.75rem; }
+
+.text-size\:sm {
+  text-align: 0.875rem; }
+
+.text-size\:m {
+  text-align: 1rem; }
+
+.text-size\:lg {
+  text-align: 1.125rem; }
+
+.text-size\:xl {
+  text-align: 1.25rem; }
+
+.text-size\:2xl {
+  text-align: 1.5rem; }
+
+.text-size\:3xl {
+  text-align: 1.875rem; }
+
+.text-size\:4xl {
+  text-align: 2.25rem; }
+
+.text-size\:5xl {
+  text-align: 3rem; }
+
+.text-style\:italic {
+  font-style: italic; }
+
+.text-style\:upper {
+  text-transform: uppercase; }
+
+.text-style\:lower {
+  text-transform: lowercase; }
+
+.text-style\:underline {
+  text-decoration: underline; }
+
+.text-style\:line-through {
+  text-decoration: line-through; }
+
+.text-style\:no-underline {
+  text-decoration: none; }
 
 /*
 |--------------------------------------------------------------------------

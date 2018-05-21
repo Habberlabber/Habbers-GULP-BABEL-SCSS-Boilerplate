@@ -1,0 +1,66 @@
+/*
+|--------------------------------------------------------------------------
+| CLASSES - TEXT.SCSS
+|--------------------------------------------------------------------------
+|
+| Text utility classes
+|
+*/
+
+.truncate {
+  @include truncate();
+}
+
+// Text align
+@each $unit, $val in $align {
+  
+  .align\:#{$unit} {
+    @include align($unit);
+  }
+
+}
+
+// Font weight
+@each $unit, $val in $weight {
+  
+  .weight\:#{$unit} {
+    @include weight($unit);
+  }
+
+}
+
+// Font size
+@each $unit, $val in $font-size {
+  
+  .text-size\:#{$unit} {
+    @include text($unit);
+  }
+
+}
+
+// Font style
+@each $unit, $val in $style {
+  
+  .text-style\:#{$unit} {
+    @include style($unit);
+  }
+
+}
+
+// Text transform
+@each $unit, $val in $transform {
+  
+  .text-style\:#{$unit} {
+    @include style($unit);
+  }
+
+}
+
+// Text decoration
+@each $unit, $val in $decoration {
+  
+  .text-style\:#{$unit} {
+    @include style($unit);
+  }
+
+}
