@@ -112,6 +112,9 @@ _Comming soon_
 ### Border
 _Comming soon_
 
+### Sizing
+_Comming soon_
+
 ### Media
 _Comming soon_
 
